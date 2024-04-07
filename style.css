@@ -1,0 +1,182 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the html and body take up the full height */
+}
+
+body {
+    background: linear-gradient(to bottom, #ffe1e1, #edd2e5);
+    display: flex;
+    flex-direction: column; /* Keeps items in a vertical flow */
+    justify-content: flex-start; /* Aligns children to the start, keeping the image at the top */
+    align-items: center; /* Center aligns items horizontally */
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+    margin-top: 25%;
+}
+
+.image {
+    width: 30%; /* Adjust as needed */
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    ; /* Adds some space at the top, adjust as needed */
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-size: 26px;
+    filter:drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2));
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically in the available space */
+    align-items: center;
+    width: 100%;
+}
+
+.buttonContainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background: #FFB6C1; /* Peach */
+    border: 3px solid #FFB6C1; /* Matching Peach for a cohesive look */
+    border-radius: 50px;
+    width: 200px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    justify-content: center; /* Centers items horizontally in the button */
+    align-items: center; /* Centers items vertically in the button */
+    display: flex;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+.buttonImage img {
+    margin-top: 4px;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.button a {
+    text-decoration: none; /* Removes the underline from links */
+    color: black;
+    display: flex; /* Ensures the link itself is also a flex container */
+    align-items: center; /* Centers the link text vertically */
+    justify-content: start; /* Centers the link text horizontally */
+    width: 100%; /* Ensures the link occupies the full width of the button */
+    margin-left: 15px;
+}
+
+.button:hover {
+    background: transparent;
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 320px){
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 70%;
+        height: 45px;
+        margin-top: 20px;
+    }
+
+    .button a {
+        font-size: 20px;
+    }
+
+    .button img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .imageContainer{
+        margin-top: 10%;
+    }
+
+    .image{
+        width: 20%;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 50%;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .button a {
+        font-size: 26px;
+    }
+
+    .button img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .imageContainer{
+        margin-top: 5%;
+    }
+
+    .image{
+        width: 8%;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 220px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .button a {
+        font-size: 20px;
+    }
+
+    .button img {
+        width: 24px;
+        height: 24px;
+    }
+}
